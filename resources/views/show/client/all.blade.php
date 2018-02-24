@@ -6,6 +6,10 @@
         </h1>
         @if ($allClients->isEmpty())
             There are no clients!
+            <div>
+            	<span style=""><a class="btn btn-success" href="{{URL::to('/add-client')}}"><i
+                            style="font-size: 15px;margin-right: 5px" class="fa fa-plus" aria-hidden="true"></i> Add New Clients</a></span>
+            </div>
         @else
             <table class="single-server">
                 <thead>
