@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <div class="modal-body">
-        <h1>Add New Client1</h1>
+        <h1>Add New Client</h1>
         <form class="form-new-server" method="post" id="form-new-server">
             {{ csrf_field() }}
             <fieldset>
