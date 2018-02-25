@@ -87,7 +87,7 @@ class ProjectController extends Controller {
 
 		$project = Project::find( $project->id );
 		$client  = Client::find( $project->client_id );
-		$clients = Client::all();
+		$clients = Client::all()->where('id', '!=', $project->client_id);
 
 		return view( 'show.project.edit', compact( 'project', 'client', 'clients' ) );
 	}
