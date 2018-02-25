@@ -38,4 +38,8 @@ Route::group( [ 'middleware' => [ 'auth' ] ], function () {
 
 	Route::get('/search','AjaxController@search');
 
+	Route::get('/user','UserController@getUser');
+	Route::post('/user','UserController@update');
+
+
 } );

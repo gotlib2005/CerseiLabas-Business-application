@@ -787,6 +787,23 @@ h1 span a {
     color: #fff !important;
     cursor: pointer
 }
+.nav-item.user {position: relative}
+.nav-item.user ul {
+    display: none;
+    width: 118px;
+    left: 6px;
+    text-align: center;
+    padding: 6px;
+    background: #f4f4f4;
+    position: absolute;
+}
+
+
+.nav-item.user ul li a {color: black;}
+.nav-item.user ul li a:hover {color: gray}
+.nav-item.user:hover > ul {
+    display: block
+}
 
 .error input, .error select {
     border: 1px solid red
