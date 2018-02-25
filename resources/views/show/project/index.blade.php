@@ -7,7 +7,7 @@
         @if ($projects->isEmpty())
             There are no projects!
         @else
-            <table class="single-server">
+            <table class="single-server projects">
                 <thead>
                 <tr>
                     <th style="text-align: center !important;">R.N.</th>

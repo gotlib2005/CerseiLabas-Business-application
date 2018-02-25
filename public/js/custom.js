@@ -32,7 +32,7 @@ jQuery(document).on('click', '.delete-item', function () {
     $('#delete-href').attr("href", $url);
 });
 
-jQuery(document).on('click', '.single-server thead tr th', function () {
+jQuery(document).on('click', '.single-server.projects thead tr th', function () {
     var $this = $(this);
     $(this).toggleClass('asc');
 
