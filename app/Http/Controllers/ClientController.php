@@ -51,17 +51,13 @@ class ClientController extends Controller {
 		$this->validate( \request(), [
 
 			'name'      => 'required',
-			'server_id' => 'required',
 			'email'     => 'required'
 
-
 		] );
-
 		Client::create( request( [ 'name', 'server_id', 'email' ] ) );
 
-		$lastID = Client::latest()->first()->id;
 
-		return redirect( 'clients/' . $lastID );
+		return redirect( 'clients');
 
 	}
 

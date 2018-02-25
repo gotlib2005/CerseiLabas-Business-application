@@ -24,7 +24,7 @@
                 <tbody>
                 @foreach($allClients as $client)
                     <tr>
-                        <td><a class="clients" href="#">{{$client->name}}</a></td>
+                        <td><a class="clients" href="{{URL::to('clients/' . $client->id) . '/edit'}}">{{$client->name}}</a></td>
                         <td>
                             <ul class="list-clients">
                                 @if (!count($client->projects) > 0)

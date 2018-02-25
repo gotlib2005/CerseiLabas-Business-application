@@ -14,8 +14,22 @@ function setActive( $path ) {
 
 function printErrorText( $inputName, $errors, $message ) {
 
-	return  $errors->first( $inputName, $message ) ;
+	return $errors->first( $inputName, $message );
 
 }
 
-
+function projectstatus( $status ) {
+	switch ( $status ) {
+		case 'Active':
+			return 'active';
+			break;
+		case 'Completed':
+			return 'completed';
+			break;
+		case 'Pending':
+			return 'pending';
+			break;
+		default:
+			return '';
+	}
+}

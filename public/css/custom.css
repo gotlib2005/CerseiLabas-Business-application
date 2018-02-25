@@ -19,9 +19,15 @@ h1 a {
     color: #fff !important;
 }
 
-/*
- * Typography
- */
+.completed {
+    background: #e87f7f;
+    color: #fff;
+}
+
+.pending {
+    background: #ffbc54;
+    color: #fff;
+}
 
 h1 {
     margin-bottom: 20px;
@@ -364,10 +370,14 @@ label.error {
     background-color: #6dbf6d;
 }
 
-p{
+p {
     font-size: 16px
 }
-.fa-trash-o {font-size: 15px}
+
+.fa-trash-o {
+    font-size: 15px
+}
+
 form#add-new {
     /*position: relative*/
 }
@@ -720,7 +730,9 @@ fieldset {
 
 }
 
-h1 span a {font-size: 16px !important;}
+h1 span a {
+    font-size: 16px !important;
+}
 
 .delete-server, .list-clients a {
     cursor: pointer;
@@ -747,15 +759,24 @@ h1 span a {font-size: 16px !important;}
     text-align: left !important;
 }
 
+.single-server tr td:last-child {
+    text-align: center !important;
+}
+
 .single-server th {
     text-align: left !important;
     font-weight: normal;
     font-size: 18px;
     background: #5bb85cad;
+    cursor: pointer;
 }
 
 .single-server tr td:first-child {
     text-align: center !important;
+}
+
+.fa-sort-desc, .fa-sort-asc {
+    float: right
 }
 
 .action-button-group {

@@ -15,6 +15,7 @@
                     <div class="controls">
                         <label for="">Client for project</label>
                         <select required name="client_id" id="client_id">
+                            <option value="">Choose Client</option>
                             @foreach($clients as $client)
                                 <option value="{{$client->id}}">{{$client->name}}</option>
                             @endforeach
