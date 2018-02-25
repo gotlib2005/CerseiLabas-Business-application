@@ -17,6 +17,14 @@
                         <select name="client_id" id="client_id">
                             @if ($project->client_id)
                                 <option value="{{$project->client_id}}">{{$client->name}}</option>
+                                @if ($clients)
+                                    @foreach($clients as $client)
+                                        <option value="{{$client->id}}">{{$client->name}}</option>
+                                    @endforeach
+                                        <option value="">No clients</option>
+                                @else
+                                    <option value="">No clients</option>
+                                @endif
                             @else
                                 <option value="">No clients</option>
                                 @if ($clients)
